@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html xml:lang="ru" lang="ru" class="bx-core bx-no-touch bx-no-retina bx-chrome"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ralaney - discord bot</title>
+	
+<link href="Ralaney_files/core.min.css" type="text/css" rel="stylesheet">
+
+<style type="text/css">
+				:root {
+					--theme-color-primary: #f7b70b;
+					--theme-color-primary-darken-1: hsl(43.73, 94%, 49%);
+					--theme-color-primary-darken-2: hsl(43.73, 94%, 46%);
+					--theme-color-primary-darken-3: hsl(43.73, 94%, 41%);
+					--theme-color-primary-lighten-1: hsl(43.73, 94%, 61%);
+					--theme-color-primary-opacity-0_1: rgba(247, 183, 11, 0.1);
+					--theme-color-primary-opacity-0_2: rgba(247, 183, 11, 0.2);
+					--theme-color-primary-opacity-0_3: rgba(247, 183, 11, 0.3);
+					--theme-color-primary-opacity-0_4: rgba(247, 183, 11, 0.4);
+					--theme-color-primary-opacity-0_6: rgba(247, 183, 11, 0.6);
+					--theme-color-primary-opacity-0_8: rgba(247, 183, 11, 0.8);
+					--theme-color-primary-opacity-0_9: rgba(247, 183, 11, 0.9);
+					--theme-color-main: #a7a7a7;
+					--theme-color-secondary: hsl(43.73, 20%, 80%);
+					--theme-color-title: #a7a7a7;
+				}
+			</style>
+<script async="" src="Ralaney_files/call.tracker.js.�%2591ез&#32;названи�%258F"></script><script async="" src="Ralaney_files/assets_webpack_c5c5ecb75b_1612887375.js.�%2591ез&#32;названи�%258F"></script><script type="text/javascript" data-skip-moving="true">(function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);</script>
+
+
+<link href="Ralaney_files/intranet-common.min.css" type="text/css" rel="stylesheet">
+<link href="Ralaney_files/sidepanel.min.css" type="text/css" rel="stylesheet">
+<link href="Ralaney_files/ui.font.opensans.min.css" type="text/css" rel="stylesheet">
+<link href="Ralaney_files/main.popup.bundle.min.css" type="text/css" rel="stylesheet">
+<link href="Ralaney_files/ui.buttons.css" type="text/css" rel="stylesheet">
+<link href="Ralaney_files/ui.buttons.ie.css" type="text/css" rel="stylesheet">
+<link href="Ralaney_files/ui.switcher.min.css" type="text/css" rel="stylesheet">
+<link href="Ralaney_files/landing_public.min.css" type="text/css" rel="stylesheet">
+<link href="Ralaney_files/style.min.css" type="text/css" rel="stylesheet">
+<link href="Ralaney_files/style.min(1).css" type="text/css" rel="stylesheet">
+<link href="Ralaney_files/bootstrap.min.css" type="text/css" data-template-style="true" rel="stylesheet">
+<link href="Ralaney_files/theme.min.css" type="text/css" data-template-style="true" rel="stylesheet">
+<link href="Ralaney_files/custom-grid.min.css" type="text/css" data-template-style="true" rel="stylesheet">
+<link href="Ralaney_files/template_styles.min.css" type="text/css" data-template-style="true" rel="stylesheet">
+
+
+
+
+
+
+
+<meta name="robots" content="noindex">
+<link rel="preload" href="https://b24-6649ub.bitrix24.site/bitrix/templates/landing24/assets/vendor/icon/fa/font.woff" as="font" crossorigin="anonymous" type="font/woff">
+<link rel="preload" href="https://b24-6649ub.bitrix24.site/bitrix/templates/landing24/assets/vendor/icon/fa/font.woff2" as="font" crossorigin="anonymous" type="font/woff2">
+<style>.fa-hand-peace-o:before{content:"\f25b";}.fa-thumbs-o-up:before{content:"\f087";}.fa-hand-grab-o:before{content:"\f255";}</style>
+<link rel="stylesheet" as="style" data-font="g-font-open-sans" data-protected="true" href="Ralaney_files/css">
+					<noscript>
+						<link
+							rel="stylesheet" 
+							data-font="g-font-open-sans" 
+							data-protected="true" 
+							href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic">
+					</noscript>
+<style>
+				body {
+					font-weight: 400;
+					font-family: "Open Sans", Helvetica, Arial, sans-serif;
+					line-height: 1.6;
+					-webkit-font-smoothing: antialiased;
+					-moz-osx-font-smoothing: grayscale;
+					-moz-font-feature-settings: "liga", "kern";
+					text-rendering: optimizelegibility;
+				}
+			</style>
+<style>
+				h1, h2, h3, h4, h5, h6 {
+					font-family: "Open Sans", Helvetica, Arial, sans-serif;
+				}
+			</style>
+<style>
+			html {font-size: 14px;}
+			body {font-size: 1rem;}
+			.g-font-size-default {font-size: 1rem;}
+		</style>
+
+
+<meta property="og:title" content="Ralaney - discord bot"><meta property="og:description" content="Ralaney discord bot"><meta property="og:image" content="https://cdn-ru.bitrix24.ru/b16626110/landing/ae3/ae36d37f57dccbb137d2fd7e746ecce9/5CtTnd0We50_2_1x.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="798"><meta property="og:type" content="website"><meta property="twitter:title" content="Ralaney - discord bot"><meta property="twitter:description" content="Ralaney discord bot"><meta property="twitter:image" content="https://cdn-ru.bitrix24.ru/b16626110/landing/ae3/ae36d37f57dccbb137d2fd7e746ecce9/5CtTnd0We50_2_1x.png"><meta name="twitter:card" content="summary_large_image"><meta property="twitter:type" content="website"> <meta name="og:url" content="https://b24-6649ub.bitrix24.site/pub/site/21/">
+<link rel="canonical" href="https://b24-6649ub.bitrix24.site/pub/site/21/"><link rel="icon" type="image/png" href="https://bitrix2.cdnvideo.ru/b16626110/resize_cache/339/047e4a127947eff3c7d861cc2f113186/landing/cb6/cb67eb930f5157b8d9589e0f5993975a/sMQiL_2v4vs_3_.png?h=b24-sfl74x.bitrix24.ru" sizes="16x16"><link rel="icon" type="image/png" href="https://bitrix2.cdnvideo.ru/b16626110/resize_cache/339/45fd33a620da2e44653e6a92c96d9446/landing/cb6/cb67eb930f5157b8d9589e0f5993975a/sMQiL_2v4vs_3_.png?h=b24-sfl74x.bitrix24.ru" sizes="32x32"><link rel="icon" type="image/png" href="https://bitrix2.cdnvideo.ru/b16626110/resize_cache/339/c8042d925d6656dd077f15192d13bb8f/landing/cb6/cb67eb930f5157b8d9589e0f5993975a/sMQiL_2v4vs_3_.png?h=b24-sfl74x.bitrix24.ru" sizes="96x96"><link rel="apple-touch-icon" href="https://cdn-ru.bitrix24.ru/b16626110/landing/cb6/cb67eb930f5157b8d9589e0f5993975a/sMQiL_2v4vs_3_.png" sizes="120x120"><link rel="apple-touch-icon" href="https://cdn-ru.bitrix24.ru/b16626110/landing/cb6/cb67eb930f5157b8d9589e0f5993975a/sMQiL_2v4vs_3_.png" sizes="180x180"><link rel="apple-touch-icon" href="https://cdn-ru.bitrix24.ru/b16626110/landing/cb6/cb67eb930f5157b8d9589e0f5993975a/sMQiL_2v4vs_3_.png" sizes="152x152"><link rel="apple-touch-icon" href="https://cdn-ru.bitrix24.ru/b16626110/landing/cb6/cb67eb930f5157b8d9589e0f5993975a/sMQiL_2v4vs_3_.png" sizes="167x167"><style type="text/css">.custom-text-shadow-1{text-shadow:2px 4px 3px rgba(0,0,0,.3)}.custom-text-shadow-2{text-shadow:2px 2px 3px rgba(255,255,255,.1)}.custom-text-shadow-3{text-shadow:6px 6px 0 rgba(0,0,0,.2)}.custom-text-shadow-4{text-shadow:4px 3px 0 #fff,9px 8px 0 rgba(0,0,0,.15)}.custom-text-shadow-5{text-shadow:0 3px 0 #b2a98f,0 14px 10px rgba(0,0,0,.15),0 24px 2px rgba(0,0,0,.1),0 34px 30px rgba(0,0,0,.1)}.custom-text-shadow-6{text-shadow:0 4px 3px rgba(0,0,0,.4),0 8px 13px rgba(0,0,0,.1),0 18px 23px rgba(0,0,0,.1)}.custom-text-shadow-7{text-shadow:0 1px 0 #ccc,0 2px 0 #c9c9c9,0 3px 0 #bbb,0 4px 0 #b9b9b9,0 5px 0 #aaa,0 6px 1px rgba(0,0,0,.1),0 0 5px rgba(0,0,0,.1),0 1px 3px rgba(0,0,0,.3),0 3px 5px rgba(0,0,0,.2),0 5px 10px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.2),0 20px 20px rgba(0,0,0,.15)}.custom-text-shadow-8{text-shadow:rgba(255,255,255,.5) 0 3px 3px}.custom-text-shadow-9{text-shadow:0 0 6px rgba(255,255,255,.7)}.custom-text-shadow-10{text-shadow:0 15px 5px rgba(0,0,0,.1),10px 20px 5px rgba(0,0,0,.05),-10px 20px 5px rgba(0,0,0,.05)}.custom-text-shadow-11{text-shadow:2px 8px 6px rgba(0,0,0,.2),0 -5px 35px rgba(255,255,255,.3)}[style*="line-through"]{text-decoration:line-through}.gm-style .gm-style-iw{font-weight:normal}.landing-public-mode [data-pseudo-url*="\"enabled\":true}"]{cursor:pointer}</style><style type="text/css">@media all and (max-width:9999px){font[color="#f5f5f5"],font[color="#f5f5f5"] *{color:#f5f5f5 !important}font[color="#cfd8dc"],font[color="#cfd8dc"] *{color:#cfd8dc !important}font[color="#d7ccc8"],font[color="#d7ccc8"] *{color:#d7ccc8 !important}font[color="#ffccbc"],font[color="#ffccbc"] *{color:#ffccbc !important}font[color="#ffe0b2"],font[color="#ffe0b2"] *{color:#ffe0b2 !important}font[color="#ffecb3"],font[color="#ffecb3"] *{color:#ffecb3 !important}font[color="#fff9c4"],font[color="#fff9c4"] *{color:#fff9c4 !important}font[color="#f0f4c3"],font[color="#f0f4c3"] *{color:#f0f4c3 !important}font[color="#dcedc8"],font[color="#dcedc8"] *{color:#dcedc8 !important}font[color="#c8e6c9"],font[color="#c8e6c9"] *{color:#c8e6c9 !important}font[color="#b2dfdb"],font[color="#b2dfdb"] *{color:#b2dfdb !important}font[color="#b2ebf2"],font[color="#b2ebf2"] *{color:#b2ebf2 !important}font[color="#b3e5fc"],font[color="#b3e5fc"] *{color:#b3e5fc !important}font[color="#bbdefb"],font[color="#bbdefb"] *{color:#bbdefb !important}font[color="#c5cae9"],font[color="#c5cae9"] *{color:#c5cae9 !important}font[color="#d1c4e9"],font[color="#d1c4e9"] *{color:#d1c4e9 !important}font[color="#e1bee7"],font[color="#e1bee7"] *{color:#e1bee7 !important}font[color="#f8bbd0"],font[color="#f8bbd0"] *{color:#f8bbd0 !important}font[color="#ffcdd2"],font[color="#ffcdd2"] *{color:#ffcdd2 !important}font[color="#eeeeee"],font[color="#eeeeee"] *{color:#eee !important}font[color="#b0bec5"],font[color="#b0bec5"] *{color:#b0bec5 !important}font[color="#bcaaa4"],font[color="#bcaaa4"] *{color:#bcaaa4 !important}font[color="#ffab91"],font[color="#ffab91"] *{color:#ffab91 !important}font[color="#ffcc80"],font[color="#ffcc80"] *{color:#ffcc80 !important}font[color="#ffe082"],font[color="#ffe082"] *{color:#ffe082 !important}font[color="#fff59d"],font[color="#fff59d"] *{color:#fff59d !important}font[color="#e6ee9c"],font[color="#e6ee9c"] *{color:#e6ee9c !important}font[color="#c5e1a5"],font[color="#c5e1a5"] *{color:#c5e1a5 !important}font[color="#a5d6a7"],font[color="#a5d6a7"] *{color:#a5d6a7 !important}font[color="#80cbc4"],font[color="#80cbc4"] *{color:#80cbc4 !important}font[color="#80deea"],font[color="#80deea"] *{color:#80deea !important}font[color="#81d4fa"],font[color="#81d4fa"] *{color:#81d4fa !important}font[color="#90caf9"],font[color="#90caf9"] *{color:#90caf9 !important}font[color="#9fa8da"],font[color="#9fa8da"] *{color:#9fa8da !important}font[color="#b39ddb"],font[color="#b39ddb"] *{color:#b39ddb !important}font[color="#ce93d8"],font[color="#ce93d8"] *{color:#ce93d8 !important}font[color="#f48fb1"],font[color="#f48fb1"] *{color:#f48fb1 !important}font[color="#ef9a9a"],font[color="#ef9a9a"] *{color:#ef9a9a !important}font[color="#e0e0e0"],font[color="#e0e0e0"] *{color:#e0e0e0 !important}font[color="#90a4ae"],font[color="#90a4ae"] *{color:#90a4ae !important}font[color="#a1887f"],font[color="#a1887f"] *{color:#a1887f !important}font[color="#ff8a65"],font[color="#ff8a65"] *{color:#ff8a65 !important}font[color="#ffb74d"],font[color="#ffb74d"] *{color:#ffb74d !important}font[color="#ffd54f"],font[color="#ffd54f"] *{color:#ffd54f !important}font[color="#fff176"],font[color="#fff176"] *{color:#fff176 !important}font[color="#dce775"],font[color="#dce775"] *{color:#dce775 !important}font[color="#aed581"],font[color="#aed581"] *{color:#aed581 !important}font[color="#81c784"],font[color="#81c784"] *{color:#81c784 !important}font[color="#4db6ac"],font[color="#4db6ac"] *{color:#4db6ac !important}font[color="#4dd0e1"],font[color="#4dd0e1"] *{color:#4dd0e1 !important}font[color="#4fc3f7"],font[color="#4fc3f7"] *{color:#4fc3f7 !important}font[color="#64b5f6"],font[color="#64b5f6"] *{color:#64b5f6 !important}font[color="#7986cb"],font[color="#7986cb"] *{color:#7986cb !important}font[color="#9575cd"],font[color="#9575cd"] *{color:#9575cd !important}font[color="#ba68c8"],font[color="#ba68c8"] *{color:#ba68c8 !important}font[color="#f06292"],font[color="#f06292"] *{color:#f06292 !important}font[color="#e57373"],font[color="#e57373"] *{color:#e57373 !important}font[color="#9e9e9e"],font[color="#9e9e9e"] *{color:#9e9e9e !important}font[color="#607d8b"],font[color="#607d8b"] *{color:#607d8b !important}font[color="#795548"],font[color="#795548"] *{color:#795548 !important}font[color="#ff5722"],font[color="#ff5722"] *{color:#ff5722 !important}font[color="#ff9800"],font[color="#ff9800"] *{color:#ff9800 !important}font[color="#ffc107"],font[color="#ffc107"] *{color:#ffc107 !important}font[color="#ffeb3b"],font[color="#ffeb3b"] *{color:#ffeb3b !important}font[color="#cddc39"],font[color="#cddc39"] *{color:#cddc39 !important}font[color="#8bc34a"],font[color="#8bc34a"] *{color:#8bc34a !important}font[color="#4caf50"],font[color="#4caf50"] *{color:#4caf50 !important}font[color="#009688"],font[color="#009688"] *{color:#009688 !important}font[color="#00bcd4"],font[color="#00bcd4"] *{color:#00bcd4 !important}font[color="#03a9f4"],font[color="#03a9f4"] *{color:#03a9f4 !important}font[color="#2196f3"],font[color="#2196f3"] *{color:#2196f3 !important}font[color="#3f51b5"],font[color="#3f51b5"] *{color:#3f51b5 !important}font[color="#673ab7"],font[color="#673ab7"] *{color:#673ab7 !important}font[color="#9c27b0"],font[color="#9c27b0"] *{color:#9c27b0 !important}font[color="#e91e63"],font[color="#e91e63"] *{color:#e91e63 !important}font[color="#f44336"],font[color="#f44336"] *{color:#f44336 !important}font[color="#757575"],font[color="#757575"] *{color:#757575 !important}font[color="#546e7a"],font[color="#546e7a"] *{color:#546e7a !important}font[color="#6d4c41"],font[color="#6d4c41"] *{color:#6d4c41 !important}font[color="#f4511e"],font[color="#f4511e"] *{color:#f4511e !important}font[color="#fb8c00"],font[color="#fb8c00"] *{color:#fb8c00 !important}font[color="#ffb300"],font[color="#ffb300"] *{color:#ffb300 !important}font[color="#fdd835"],font[color="#fdd835"] *{color:#fdd835 !important}font[color="#c0ca33"],font[color="#c0ca33"] *{color:#c0ca33 !important}font[color="#7cb342"],font[color="#7cb342"] *{color:#7cb342 !important}font[color="#43a047"],font[color="#43a047"] *{color:#43a047 !important}font[color="#00897b"],font[color="#00897b"] *{color:#00897b !important}font[color="#00acc1"],font[color="#00acc1"] *{color:#00acc1 !important}font[color="#039be5"],font[color="#039be5"] *{color:#039be5 !important}font[color="#1e88e5"],font[color="#1e88e5"] *{color:#1e88e5 !important}font[color="#3949ab"],font[color="#3949ab"] *{color:#3949ab !important}font[color="#5e35b1"],font[color="#5e35b1"] *{color:#5e35b1 !important}font[color="#8e24aa"],font[color="#8e24aa"] *{color:#8e24aa !important}font[color="#d81b60"],font[color="#d81b60"] *{color:#d81b60 !important}font[color="#e53935"],font[color="#e53935"] *{color:#e53935 !important}font[color="#616161"],font[color="#616161"] *{color:#616161 !important}font[color="#455a64"],font[color="#455a64"] *{color:#455a64 !important}font[color="#5d4037"],font[color="#5d4037"] *{color:#5d4037 !important}font[color="#e64a19"],font[color="#e64a19"] *{color:#e64a19 !important}font[color="#f57c00"],font[color="#f57c00"] *{color:#f57c00 !important}font[color="#ffa000"],font[color="#ffa000"] *{color:#ffa000 !important}font[color="#fbc02d"],font[color="#fbc02d"] *{color:#fbc02d !important}font[color="#afb42b"],font[color="#afb42b"] *{color:#afb42b !important}font[color="#689f38"],font[color="#689f38"] *{color:#689f38 !important}font[color="#388e3c"],font[color="#388e3c"] *{color:#388e3c !important}font[color="#00796b"],font[color="#00796b"] *{color:#00796b !important}font[color="#0097a7"],font[color="#0097a7"] *{color:#0097a7 !important}font[color="#0288d1"],font[color="#0288d1"] *{color:#0288d1 !important}font[color="#1976d2"],font[color="#1976d2"] *{color:#1976d2 !important}font[color="#303f9f"],font[color="#303f9f"] *{color:#303f9f !important}font[color="#512da8"],font[color="#512da8"] *{color:#512da8 !important}font[color="#7b1fa2"],font[color="#7b1fa2"] *{color:#7b1fa2 !important}font[color="#c2185b"],font[color="#c2185b"] *{color:#c2185b !important}font[color="#d32f2f"],font[color="#d32f2f"] *{color:#d32f2f !important}font[color="#212121"],font[color="#212121"] *{color:#212121 !important}font[color="#263238"],font[color="#263238"] *{color:#263238 !important}font[color="#3e2723"],font[color="#3e2723"] *{color:#3e2723 !important}font[color="#bf360c"],font[color="#bf360c"] *{color:#bf360c !important}font[color="#e65100"],font[color="#e65100"] *{color:#e65100 !important}font[color="#ff6f00"],font[color="#ff6f00"] *{color:#ff6f00 !important}font[color="#f57f17"],font[color="#f57f17"] *{color:#f57f17 !important}font[color="#827717"],font[color="#827717"] *{color:#827717 !important}font[color="#33691e"],font[color="#33691e"] *{color:#33691e !important}font[color="#1b5e20"],font[color="#1b5e20"] *{color:#1b5e20 !important}font[color="#004d40"],font[color="#004d40"] *{color:#004d40 !important}font[color="#006064"],font[color="#006064"] *{color:#006064 !important}font[color="#01579b"],font[color="#01579b"] *{color:#01579b !important}font[color="#0d47a1"],font[color="#0d47a1"] *{color:#0d47a1 !important}font[color="#1a237e"],font[color="#1a237e"] *{color:#1a237e !important}font[color="#311b92"],font[color="#311b92"] *{color:#311b92 !important}font[color="#4a148c"],font[color="#4a148c"] *{color:#4a148c !important}font[color="#880e4f"],font[color="#880e4f"] *{color:#880e4f !important}font[color="#b71c1c"],font[color="#b71c1c"] *{color:#b71c1c !important}}</style><style type="text/css">@charset "UTF-8";/*!
+ * animate.css -http://daneden.me/animate
+ * Version - 3.5.2
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2017 Daniel Eden
+ */.animated{animation-duration:1s;animation-fill-mode:both}.animated.infinite{animation-iteration-count:infinite}.animated.hinge{animation-duration:2s}.animated.flipOutX,.animated.flipOutY,.animated.bounceIn,.animated.bounceOut{animation-duration:.75s}@keyframes bounce{from,20%,53%,80%,to{animation-timing-function:cubic-bezier(0.215,0.610,0.355,1.000);transform:translate3d(0,0,0)}40%,43%{animation-timing-function:cubic-bezier(0.755,0.050,0.855,0.060);transform:translate3d(0,-30px,0)}70%{animation-timing-function:cubic-bezier(0.755,0.050,0.855,0.060);transform:translate3d(0,-15px,0)}90%{transform:translate3d(0,-4px,0)}}.bounce{animation-name:bounce;transform-origin:center bottom}@keyframes flash{from,50%,to{opacity:1}25%,75%{opacity:0}}.flash{animation-name:flash}@keyframes pulse{from{transform:scale3d(1,1,1)}50%{transform:scale3d(1.05,1.05,1.05)}to{transform:scale3d(1,1,1)}}.pulse{animation-name:pulse}@keyframes rubberBand{from{transform:scale3d(1,1,1)}30%{transform:scale3d(1.25,0.75,1)}40%{transform:scale3d(0.75,1.25,1)}50%{transform:scale3d(1.15,0.85,1)}65%{transform:scale3d(.95,1.05,1)}75%{transform:scale3d(1.05,.95,1)}to{transform:scale3d(1,1,1)}}.rubberBand{animation-name:rubberBand}@keyframes shake{from,to{transform:translate3d(0,0,0)}10%,30%,50%,70%,90%{transform:translate3d(-10px,0,0)}20%,40%,60%,80%{transform:translate3d(10px,0,0)}}.shake{animation-name:shake}@keyframes headShake{0%{transform:translateX(0)}6.5%{transform:translateX(-6px) rotateY(-9deg)}18.5%{transform:translateX(5px) rotateY(7deg)}31.5%{transform:translateX(-3px) rotateY(-5deg)}43.5%{transform:translateX(2px) rotateY(3deg)}50%{transform:translateX(0)}}.headShake{animation-timing-function:ease-in-out;animation-name:headShake}@keyframes swing{20%{transform:rotate3d(0,0,1,15deg)}40%{transform:rotate3d(0,0,1,-10deg)}60%{transform:rotate3d(0,0,1,5deg)}80%{transform:rotate3d(0,0,1,-5deg)}to{transform:rotate3d(0,0,1,0deg)}}.swing{transform-origin:top center;animation-name:swing}@keyframes tada{from{transform:scale3d(1,1,1)}10%,20%{transform:scale3d(.9,.9,.9) rotate3d(0,0,1,-3deg)}30%,50%,70%,90%{transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,3deg)}40%,60%,80%{transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,-3deg)}to{transform:scale3d(1,1,1)}}.tada{animation-name:tada}@keyframes wobble{from{transform:none}15%{transform:translate3d(-25%,0,0) rotate3d(0,0,1,-5deg)}30%{transform:translate3d(20%,0,0) rotate3d(0,0,1,3deg)}45%{transform:translate3d(-15%,0,0) rotate3d(0,0,1,-3deg)}60%{transform:translate3d(10%,0,0) rotate3d(0,0,1,2deg)}75%{transform:translate3d(-5%,0,0) rotate3d(0,0,1,-1deg)}to{transform:none}}.wobble{animation-name:wobble}@keyframes jello{from,11.1%,to{transform:none}22.2%{transform:skewX(-12.5deg) skewY(-12.5deg)}33.3%{transform:skewX(6.25deg) skewY(6.25deg)}44.4%{transform:skewX(-3.125deg) skewY(-3.125deg)}55.5%{transform:skewX(1.5625deg) skewY(1.5625deg)}66.6%{transform:skewX(-0.78125deg) skewY(-0.78125deg)}77.7%{transform:skewX(0.390625deg) skewY(0.390625deg)}88.8%{transform:skewX(-0.1953125deg) skewY(-0.1953125deg)}}.jello{animation-name:jello;transform-origin:center}@keyframes bounceIn{from,20%,40%,60%,80%,to{animation-timing-function:cubic-bezier(0.215,0.610,0.355,1.000)}0%{opacity:0;transform:scale3d(.3,.3,.3)}20%{transform:scale3d(1.1,1.1,1.1)}40%{transform:scale3d(.9,.9,.9)}60%{opacity:1;transform:scale3d(1.03,1.03,1.03)}80%{transform:scale3d(.97,.97,.97)}to{opacity:1;transform:scale3d(1,1,1)}}.bounceIn{animation-name:bounceIn}@keyframes bounceInDown{from,60%,75%,90%,to{animation-timing-function:cubic-bezier(0.215,0.610,0.355,1.000)}0%{opacity:0;transform:translate3d(0,-3000px,0)}60%{opacity:1;transform:translate3d(0,25px,0)}75%{transform:translate3d(0,-10px,0)}90%{transform:translate3d(0,5px,0)}to{transform:none}}.bounceInDown{animation-name:bounceInDown}@keyframes bounceInLeft{from,60%,75%,90%,to{animation-timing-function:cubic-bezier(0.215,0.610,0.355,1.000)}0%{opacity:0;transform:translate3d(-3000px,0,0)}60%{opacity:1;transform:translate3d(25px,0,0)}75%{transform:translate3d(-10px,0,0)}90%{transform:translate3d(5px,0,0)}to{transform:none}}.bounceInLeft{animation-name:bounceInLeft}@keyframes bounceInRight{from,60%,75%,90%,to{animation-timing-function:cubic-bezier(0.215,0.610,0.355,1.000)}from{opacity:0;transform:translate3d(3000px,0,0)}60%{opacity:1;transform:translate3d(-25px,0,0)}75%{transform:translate3d(10px,0,0)}90%{transform:translate3d(-5px,0,0)}to{transform:none}}.bounceInRight{animation-name:bounceInRight}@keyframes bounceInUp{from,60%,75%,90%,to{animation-timing-function:cubic-bezier(0.215,0.610,0.355,1.000)}from{opacity:0;transform:translate3d(0,3000px,0)}60%{opacity:1;transform:translate3d(0,-20px,0)}75%{transform:translate3d(0,10px,0)}90%{transform:translate3d(0,-5px,0)}to{transform:translate3d(0,0,0)}}.bounceInUp{animation-name:bounceInUp}@keyframes bounceOut{20%{transform:scale3d(.9,.9,.9)}50%,55%{opacity:1;transform:scale3d(1.1,1.1,1.1)}to{opacity:0;transform:scale3d(.3,.3,.3)}}.bounceOut{animation-name:bounceOut}@keyframes bounceOutDown{20%{transform:translate3d(0,10px,0)}40%,45%{opacity:1;transform:translate3d(0,-20px,0)}to{opacity:0;transform:translate3d(0,2000px,0)}}.bounceOutDown{animation-name:bounceOutDown}@keyframes bounceOutLeft{20%{opacity:1;transform:translate3d(20px,0,0)}to{opacity:0;transform:translate3d(-2000px,0,0)}}.bounceOutLeft{animation-name:bounceOutLeft}@keyframes bounceOutRight{20%{opacity:1;transform:translate3d(-20px,0,0)}to{opacity:0;transform:translate3d(2000px,0,0)}}.bounceOutRight{animation-name:bounceOutRight}@keyframes bounceOutUp{20%{transform:translate3d(0,-10px,0)}40%,45%{opacity:1;transform:translate3d(0,20px,0)}to{opacity:0;transform:translate3d(0,-2000px,0)}}.bounceOutUp{animation-name:bounceOutUp}@keyframes fadeIn{from{opacity:0}to{opacity:1}}.fadeIn{animation-name:fadeIn}@keyframes fadeInDown{from{opacity:0;transform:translate3d(0,-100%,0)}to{opacity:1;transform:none}}.fadeInDown{animation-name:fadeInDown}@keyframes fadeInDownBig{from{opacity:0;transform:translate3d(0,-2000px,0)}to{opacity:1;transform:none}}.fadeInDownBig{animation-name:fadeInDownBig}@keyframes fadeInLeft{from{opacity:0;transform:translate3d(-100%,0,0)}to{opacity:1;transform:none}}.fadeInLeft{animation-name:fadeInLeft}@keyframes fadeInLeftBig{from{opacity:0;transform:translate3d(-2000px,0,0)}to{opacity:1;transform:none}}.fadeInLeftBig{animation-name:fadeInLeftBig}@keyframes fadeInRight{from{opacity:0;transform:translate3d(100%,0,0)}to{opacity:1;transform:none}}.fadeInRight{animation-name:fadeInRight}@keyframes fadeInRightBig{from{opacity:0;transform:translate3d(2000px,0,0)}to{opacity:1;transform:none}}.fadeInRightBig{animation-name:fadeInRightBig}@keyframes fadeInUp{from{opacity:0;transform:translate3d(0,100%,0)}to{opacity:1;transform:none}}.fadeInUp{animation-name:fadeInUp}@keyframes fadeInUpBig{from{opacity:0;transform:translate3d(0,2000px,0)}to{opacity:1;transform:none}}.fadeInUpBig{animation-name:fadeInUpBig}@keyframes fadeOut{from{opacity:1}to{opacity:0}}.fadeOut{animation-name:fadeOut}@keyframes fadeOutDown{from{opacity:1}to{opacity:0;transform:translate3d(0,100%,0)}}.fadeOutDown{animation-name:fadeOutDown}@keyframes fadeOutDownBig{from{opacity:1}to{opacity:0;transform:translate3d(0,2000px,0)}}.fadeOutDownBig{animation-name:fadeOutDownBig}@keyframes fadeOutLeft{from{opacity:1}to{opacity:0;transform:translate3d(-100%,0,0)}}.fadeOutLeft{animation-name:fadeOutLeft}@keyframes fadeOutLeftBig{from{opacity:1}to{opacity:0;transform:translate3d(-2000px,0,0)}}.fadeOutLeftBig{animation-name:fadeOutLeftBig}@keyframes fadeOutRight{from{opacity:1}to{opacity:0;transform:translate3d(100%,0,0)}}.fadeOutRight{animation-name:fadeOutRight}@keyframes fadeOutRightBig{from{opacity:1}to{opacity:0;transform:translate3d(2000px,0,0)}}.fadeOutRightBig{animation-name:fadeOutRightBig}@keyframes fadeOutUp{from{opacity:1}to{opacity:0;transform:translate3d(0,-100%,0)}}.fadeOutUp{animation-name:fadeOutUp}@keyframes fadeOutUpBig{from{opacity:1}to{opacity:0;transform:translate3d(0,-2000px,0)}}.fadeOutUpBig{animation-name:fadeOutUpBig}@keyframes flip{from{transform:perspective(400px) rotate3d(0,1,0,-360deg);animation-timing-function:ease-out}40%{transform:perspective(400px) translate3d(0,0,150px) rotate3d(0,1,0,-190deg);animation-timing-function:ease-out}50%{transform:perspective(400px) translate3d(0,0,150px) rotate3d(0,1,0,-170deg);animation-timing-function:ease-in}80%{transform:perspective(400px) scale3d(.95,.95,.95);animation-timing-function:ease-in}to{transform:perspective(400px);animation-timing-function:ease-in}}.animated.flip{-webkit-backface-visibility:visible;backface-visibility:visible;animation-name:flip}@keyframes flipInX{from{transform:perspective(400px) rotate3d(1,0,0,90deg);animation-timing-function:ease-in;opacity:0}40%{transform:perspective(400px) rotate3d(1,0,0,-20deg);animation-timing-function:ease-in}60%{transform:perspective(400px) rotate3d(1,0,0,10deg);opacity:1}80%{transform:perspective(400px) rotate3d(1,0,0,-5deg)}to{transform:perspective(400px)}}.flipInX{-webkit-backface-visibility:visible!important;backface-visibility:visible!important;animation-name:flipInX}@keyframes flipInY{from{transform:perspective(400px) rotate3d(0,1,0,90deg);animation-timing-function:ease-in;opacity:0}40%{transform:perspective(400px) rotate3d(0,1,0,-20deg);animation-timing-function:ease-in}60%{transform:perspective(400px) rotate3d(0,1,0,10deg);opacity:1}80%{transform:perspective(400px) rotate3d(0,1,0,-5deg)}to{transform:perspective(400px)}}.flipInY{-webkit-backface-visibility:visible!important;backface-visibility:visible!important;animation-name:flipInY}@keyframes flipOutX{from{transform:perspective(400px)}30%{transform:perspective(400px) rotate3d(1,0,0,-20deg);opacity:1}to{transform:perspective(400px) rotate3d(1,0,0,90deg);opacity:0}}.flipOutX{animation-name:flipOutX;-webkit-backface-visibility:visible!important;backface-visibility:visible!important}@keyframes flipOutY{from{transform:perspective(400px)}30%{transform:perspective(400px) rotate3d(0,1,0,-15deg);opacity:1}to{transform:perspective(400px) rotate3d(0,1,0,90deg);opacity:0}}.flipOutY{-webkit-backface-visibility:visible!important;backface-visibility:visible!important;animation-name:flipOutY}@keyframes lightSpeedIn{from{transform:translate3d(100%,0,0) skewX(-30deg);opacity:0}60%{transform:skewX(20deg);opacity:1}80%{transform:skewX(-5deg);opacity:1}to{transform:none;opacity:1}}.lightSpeedIn{animation-name:lightSpeedIn;animation-timing-function:ease-out}@keyframes lightSpeedOut{from{opacity:1}to{transform:translate3d(100%,0,0) skewX(30deg);opacity:0}}.lightSpeedOut{animation-name:lightSpeedOut;animation-timing-function:ease-in}@keyframes rotateIn{from{transform-origin:center;transform:rotate3d(0,0,1,-200deg);opacity:0}to{transform-origin:center;transform:none;opacity:1}}.rotateIn{animation-name:rotateIn}@keyframes rotateInDownLeft{from{transform-origin:left bottom;transform:rotate3d(0,0,1,-45deg);opacity:0}to{transform-origin:left bottom;transform:none;opacity:1}}.rotateInDownLeft{animation-name:rotateInDownLeft}@keyframes rotateInDownRight{from{transform-origin:right bottom;transform:rotate3d(0,0,1,45deg);opacity:0}to{transform-origin:right bottom;transform:none;opacity:1}}.rotateInDownRight{animation-name:rotateInDownRight}@keyframes rotateInUpLeft{from{transform-origin:left bottom;transform:rotate3d(0,0,1,45deg);opacity:0}to{transform-origin:left bottom;transform:none;opacity:1}}.rotateInUpLeft{animation-name:rotateInUpLeft}@keyframes rotateInUpRight{from{transform-origin:right bottom;transform:rotate3d(0,0,1,-90deg);opacity:0}to{transform-origin:right bottom;transform:none;opacity:1}}.rotateInUpRight{animation-name:rotateInUpRight}@keyframes rotateOut{from{transform-origin:center;opacity:1}to{transform-origin:center;transform:rotate3d(0,0,1,200deg);opacity:0}}.rotateOut{animation-name:rotateOut}@keyframes rotateOutDownLeft{from{transform-origin:left bottom;opacity:1}to{transform-origin:left bottom;transform:rotate3d(0,0,1,45deg);opacity:0}}.rotateOutDownLeft{animation-name:rotateOutDownLeft}@keyframes rotateOutDownRight{from{transform-origin:right bottom;opacity:1}to{transform-origin:right bottom;transform:rotate3d(0,0,1,-45deg);opacity:0}}.rotateOutDownRight{animation-name:rotateOutDownRight}@keyframes rotateOutUpLeft{from{transform-origin:left bottom;opacity:1}to{transform-origin:left bottom;transform:rotate3d(0,0,1,-45deg);opacity:0}}.rotateOutUpLeft{animation-name:rotateOutUpLeft}@keyframes rotateOutUpRight{from{transform-origin:right bottom;opacity:1}to{transform-origin:right bottom;transform:rotate3d(0,0,1,90deg);opacity:0}}.rotateOutUpRight{animation-name:rotateOutUpRight}@keyframes hinge{0%{transform-origin:top left;animation-timing-function:ease-in-out}20%,60%{transform:rotate3d(0,0,1,80deg);transform-origin:top left;animation-timing-function:ease-in-out}40%,80%{transform:rotate3d(0,0,1,60deg);transform-origin:top left;animation-timing-function:ease-in-out;opacity:1}to{transform:translate3d(0,700px,0);opacity:0}}.hinge{animation-name:hinge}@keyframes jackInTheBox{from{opacity:0;transform:scale(0.1) rotate(30deg);transform-origin:center bottom}50%{transform:rotate(-10deg)}70%{transform:rotate(3deg)}to{opacity:1;transform:scale(1)}}.jackInTheBox{animation-name:jackInTheBox}@keyframes rollIn{from{opacity:0;transform:translate3d(-100%,0,0) rotate3d(0,0,1,-120deg)}to{opacity:1;transform:none}}.rollIn{animation-name:rollIn}@keyframes rollOut{from{opacity:1}to{opacity:0;transform:translate3d(100%,0,0) rotate3d(0,0,1,120deg)}}.rollOut{animation-name:rollOut}@keyframes zoomIn{from{opacity:0;transform:scale3d(.3,.3,.3)}50%{opacity:1}}.zoomIn{animation-name:zoomIn}@keyframes zoomInDown{from{opacity:0;transform:scale3d(.1,.1,.1) translate3d(0,-1000px,0);animation-timing-function:cubic-bezier(0.550,0.055,0.675,0.190)}60%{opacity:1;transform:scale3d(.475,.475,.475) translate3d(0,60px,0);animation-timing-function:cubic-bezier(0.175,0.885,0.320,1)}}.zoomInDown{animation-name:zoomInDown}@keyframes zoomInLeft{from{opacity:0;transform:scale3d(.1,.1,.1) translate3d(-1000px,0,0);animation-timing-function:cubic-bezier(0.550,0.055,0.675,0.190)}60%{opacity:1;transform:scale3d(.475,.475,.475) translate3d(10px,0,0);animation-timing-function:cubic-bezier(0.175,0.885,0.320,1)}}.zoomInLeft{animation-name:zoomInLeft}@keyframes zoomInRight{from{opacity:0;transform:scale3d(.1,.1,.1) translate3d(1000px,0,0);animation-timing-function:cubic-bezier(0.550,0.055,0.675,0.190)}60%{opacity:1;transform:scale3d(.475,.475,.475) translate3d(-10px,0,0);animation-timing-function:cubic-bezier(0.175,0.885,0.320,1)}}.zoomInRight{animation-name:zoomInRight}@keyframes zoomInUp{from{opacity:0;transform:scale3d(.1,.1,.1) translate3d(0,1000px,0);animation-timing-function:cubic-bezier(0.550,0.055,0.675,0.190)}60%{opacity:1;transform:scale3d(.475,.475,.475) translate3d(0,-60px,0);animation-timing-function:cubic-bezier(0.175,0.885,0.320,1)}}.zoomInUp{animation-name:zoomInUp}@keyframes zoomOut{from{opacity:1}50%{opacity:0;transform:scale3d(.3,.3,.3)}to{opacity:0}}.zoomOut{animation-name:zoomOut}@keyframes zoomOutDown{40%{opacity:1;transform:scale3d(.475,.475,.475) translate3d(0,-60px,0);animation-timing-function:cubic-bezier(0.550,0.055,0.675,0.190)}to{opacity:0;transform:scale3d(.1,.1,.1) translate3d(0,2000px,0);transform-origin:center bottom;animation-timing-function:cubic-bezier(0.175,0.885,0.320,1)}}.zoomOutDown{animation-name:zoomOutDown}@keyframes zoomOutLeft{40%{opacity:1;transform:scale3d(.475,.475,.475) translate3d(42px,0,0)}to{opacity:0;transform:scale(.1) translate3d(-2000px,0,0);transform-origin:left center}}.zoomOutLeft{animation-name:zoomOutLeft}@keyframes zoomOutRight{40%{opacity:1;transform:scale3d(.475,.475,.475) translate3d(-42px,0,0)}to{opacity:0;transform:scale(.1) translate3d(2000px,0,0);transform-origin:right center}}.zoomOutRight{animation-name:zoomOutRight}@keyframes zoomOutUp{40%{opacity:1;transform:scale3d(.475,.475,.475) translate3d(0,60px,0);animation-timing-function:cubic-bezier(0.550,0.055,0.675,0.190)}to{opacity:0;transform:scale3d(.1,.1,.1) translate3d(0,-2000px,0);transform-origin:center bottom;animation-timing-function:cubic-bezier(0.175,0.885,0.320,1)}}.zoomOutUp{animation-name:zoomOutUp}@keyframes slideInDown{from{transform:translate3d(0,-100%,0);visibility:visible}to{transform:translate3d(0,0,0)}}.slideInDown{animation-name:slideInDown}@keyframes slideInLeft{from{transform:translate3d(-100%,0,0);visibility:visible}to{transform:translate3d(0,0,0)}}.slideInLeft{animation-name:slideInLeft}@keyframes slideInRight{from{transform:translate3d(100%,0,0);visibility:visible}to{transform:translate3d(0,0,0)}}.slideInRight{animation-name:slideInRight}@keyframes slideInUp{from{transform:translate3d(0,100%,0);visibility:visible}to{transform:translate3d(0,0,0)}}.slideInUp{animation-name:slideInUp}@keyframes slideOutDown{from{transform:translate3d(0,0,0)}to{visibility:hidden;transform:translate3d(0,100%,0)}}.slideOutDown{animation-name:slideOutDown}@keyframes slideOutLeft{from{transform:translate3d(0,0,0)}to{visibility:hidden;transform:translate3d(-100%,0,0)}}.slideOutLeft{animation-name:slideOutLeft}@keyframes slideOutRight{from{transform:translate3d(0,0,0)}to{visibility:hidden;transform:translate3d(100%,0,0)}}.slideOutRight{animation-name:slideOutRight}@keyframes slideOutUp{from{transform:translate3d(0,0,0)}to{visibility:hidden;transform:translate3d(0,-100%,0)}}.slideOutUp{animation-name:slideOutUp}</style><style type="text/css">/*!
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */@font-face{font-family:'FontAwesome';src:url('https://ralaney.ralaney.repl.co/bitrix/templates/landing24/assets/vendor/icon/fa/font.woff2') format('woff2'),url('https://ralaney.ralaney.repl.co/bitrix/templates/landing24/assets/vendor/icon/fa/font.woff') format('woff');font-weight:normal;font-style:normal}.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.fa-lg{font-size:1.33333333em;line-height:.75em;vertical-align:-15%}.fa-2x{font-size:2em}.fa-3x{font-size:3em}.fa-4x{font-size:4em}.fa-5x{font-size:5em}.fa-fw{width:1.28571429em;text-align:center}.fa-ul{padding-left:0;margin-left:2.14285714em;list-style-type:none}.fa-ul>li{position:relative}.fa-li{position:absolute;left:-2.14285714em;width:2.14285714em;top:.14285714em;text-align:center}.fa-li.fa-lg{left:-1.85714286em}.fa-border{padding:.2em .25em .15em;border:solid .08em #eee;border-radius:.1em}.fa-pull-left{float:left}.fa-pull-right{float:right}.fa.fa-pull-left{margin-right:.3em}.fa.fa-pull-right{margin-left:.3em}.pull-right{float:right}.pull-left{float:left}.fa.pull-left{margin-right:.3em}.fa.pull-right{margin-left:.3em}.fa-spin{-webkit-animation:fa-spin 2s infinite linear;animation:fa-spin 2s infinite linear}.fa-pulse{-webkit-animation:fa-spin 1s infinite steps(8);animation:fa-spin 1s infinite steps(8)}@-webkit-keyframes fa-spin{0{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}@keyframes fa-spin{0{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}.fa-rotate-90{-ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";-webkit-transform:rotate(90deg);-ms-transform:rotate(90deg);transform:rotate(90deg)}.fa-rotate-180{-ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg)}.fa-rotate-270{-ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";-webkit-transform:rotate(270deg);-ms-transform:rotate(270deg);transform:rotate(270deg)}.fa-flip-horizontal{-ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";-webkit-transform:scale(-1,1);-ms-transform:scale(-1,1);transform:scale(-1,1)}.fa-flip-vertical{-ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";-webkit-transform:scale(1,-1);-ms-transform:scale(1,-1);transform:scale(1,-1)}:root .fa-rotate-90,:root .fa-rotate-180,:root .fa-rotate-270,:root .fa-flip-horizontal,:root .fa-flip-vertical{filter:none}.fa-stack{position:relative;display:inline-block;width:2em;height:2em;line-height:2em;vertical-align:middle}.fa-stack-1x,.fa-stack-2x{position:absolute;left:0;width:100%;text-align:center}.fa-stack-1x{line-height:inherit}.fa-stack-2x{font-size:2em}.fa-inverse{color:#fff}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}</style></head>
+<body class="">
+<main class="w-100 landing-public-mode g-py-6 g-px-10 g-py-30--md g-px-50--md"><div id="b163" class="block-wrapper block-01-big-with-text-3"><section class="landing-block landing-block-node-img u-bg-overlay g-flex-centered g-min-height-100vh g-bg-img-hero g-bg-black-opacity-0_5--after g-pt-80 g-pb-80" style="background-image: url(https://ralaney.ralaney.repl.co/&); background-image: -webkit-image-set(url(https://ralaney.ralaney.repl.co/&) 1x, url(https://ralaney.ralaney.repl.co/&) 2x); background-image: image-set(url(https://ralaney.ralaney.repl.co/&) 1x, url(https://ralaney.ralaney.repl.co/&) 2x);" data-fileid="331" data-fileid2x="333" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}">
+	<div class="landing-block-node-container container g-max-width-800 js-animation fadeInDown text-center u-bg-overlay__inner g-mx-1" style="animation-duration: 1000ms; animation-play-state: running; animation-name: none;">
+		<h2 class="landing-block-node-title landing-semantic-title-image-medium text-uppercase g-line-height-1 g-font-weight-700 g-font-size-30 g-color-white g-mb-20"><span style="color: rgb(255, 179, 0);">
+      <script src="https://ralaney.ralaney.repl.co/informer-0.9.0.js" type="text/javascript"></script>
+			RALANEY</span></h2>
+
+		<div class="landing-block-node-text landing-semantic-text-image-medium g-color-white-opacity-0_7 g-mb-35" data-auto-font-scale="">Ралани - очень интересные и в боте бесплатная музыка!</div>
+		<div class="landing-block-node-button-container">
+			<a href="https://discord.com/oauth2/authorize?client_id=799624981264728065&amp;permissions=8&amp;redirect_uri=https%3A%2F%2Fdiscord.gg%2FdJCSvcZpcu&amp;response_type=code&amp;scope=guilds.join%20bot" class="landing-block-node-button landing-semantic-link-image-medium btn g-btn-primary g-btn-type-solid g-btn-px-l g-btn-size-md text-uppercase g-rounded-50 g-py-15" target="_blank">Пригласить бота</a>
+		</div>
+	</div>
+</section></div><div id="b173" class="block-wrapper block-26-2-separator"><section class="landing-block g-pt-0 g-pb-0 g-height-150--md g-height-70 g-fill-white--second g-fill-blue-opacity-0_7--first">
+	<svg class="g-width-100x g-height-100x" viewBox="0 0 1100 200" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+		<path class="fill-first" d="M550 0H0V200L550 0Z"></path>
+		<path class="fill-first" d="M550 0H1100V200L550 0Z"></path>
+		<path class="fill-second" d="M550 200H0L550 1.52588e-05L1100 200H550Z"></path>
+	</svg>
+</section></div><div id="b175" class="block-wrapper block-14-2contacts-3-cols"><section class="landing-block g-pt-40 g-pb-25 text-center">
+	<div class="container">
+		<div class="row justify-content-center">
+
+			<div class="landing-block-card js-animation fadeIn landing-block-node-contact g-brd-between-cols col-sm-6 col-md-6 col-lg-4 g-brd-primary g-px-15 g-py-30 g-py-0--md g-mb-15" data-card-preset="contact-link" style="animation-duration: 1000ms; animation-play-state: running; animation-name: none;">
+				<a class="landing-block-node-linkcontact-link g-text-decoration-none--hover" href="https://discord.gg/nvFMQbQD7z" target="_blank">
+					<span class="landing-block-node-contact-icon-container d-block g-color-primary g-font-size-50 g-line-height-1 g-mb-20">
+						<i class="landing-block-node-linkcontact-icon fa fa-hand-peace-o" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}"></i>
+					</span>
+					<span class="landing-block-node-linkcontact-title landing-semantic-subtitle-medium d-block text-uppercase g-font-size-14 g-color-main g-mb-5">Зайти на support сервер</span>
+					<span class="landing-block-node-linkcontact-text landing-semantic-subtitle-small-primary g-text-decoration-none g-text-underline--hover g-font-size-14 g-font-weight-700">Тыкнуть</span>
+				</a>
+			</div>
+
+			<div class="landing-block-card js-animation fadeIn landing-block-node-contact g-brd-between-cols col-sm-6 col-md-6 col-lg-4 g-brd-primary g-px-15 g-py-30 g-py-0--md g-mb-15" data-card-preset="contact-link" style="animation-duration: 1000ms; animation-play-state: running; animation-name: none;">
+				<a class="landing-block-node-linkcontact-link g-text-decoration-none--hover" href="https://discord.gg/nvFMQbQD7z" target="_blank">
+					<span class="landing-block-node-contact-icon-container d-block g-color-primary g-font-size-50 g-line-height-1 g-mb-20">
+						<i class="landing-block-node-linkcontact-icon fa fa-thumbs-o-up" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}"></i>
+					</span>
+					<span class="landing-block-node-linkcontact-title landing-semantic-subtitle-medium d-block text-uppercase g-font-size-14 g-color-main g-mb-5">FoxFoxix#1087 (Разработчик)</span>
+					<span class="landing-block-node-linkcontact-text landing-semantic-subtitle-small-primary g-text-decoration-none g-text-underline--hover g-font-size-14 g-font-weight-700">Зайти на сервер разработчика</span>
+				</a>
+			</div>
+
+			<div class="landing-block-card js-animation fadeIn landing-block-node-contact g-brd-between-cols col-sm-6 col-md-6 col-lg-4 g-brd-primary g-px-15 g-py-30 g-py-0--md g-mb-15" data-card-preset="contact-text" style="animation-duration: 1000ms; animation-play-state: running; animation-name: none;">
+				<div class="landing-block-node-contact-container">
+					<span class="landing-block-node-contact-icon-container d-block g-color-primary g-font-size-50 g-line-height-1 g-mb-20">
+						<i class="landing-block-node-contact-icon fa fa-hand-grab-o" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}"></i>
+					</span>
+					<span class="landing-block-node-contact-title landing-semantic-subtitle-medium d-block text-uppercase g-font-size-14 g-color-main g-mb-5">Новогодний Ferum_YT🚀#3794 (Помощник)</span>
+					<span class="landing-block-node-contact-text landing-semantic-subtitle-small-primary g-text-decoration-none g-text-underline--hover g-font-size-14 g-font-weight-700"><a href="https://discord.gg/4hEfqHT6dr" target="_blank">Зайти на сервер помощника</a></span>
+				</div>
+			</div>
+
+
+
+		</div>
+	</div>
+</section></div><div id="b177" class="block-wrapper block-11-three-cols-fix-tariffs"><section class="landing-block g-pt-30 g-pb-20">
+        <div class="container">
+
+            <div class="row no-gutters landing-block-inner">
+
+                
+
+                
+
+                <div class="landing-block-card js-animation fadeInUp col-md-4 col-lg-4 g-mb-30 g-mb-0--md" style="animation-duration: 1000ms; animation-play-state: running; animation-name: none;">
+                    <article class="text-center g-brd-around g-color-gray g-brd-gray-light-v5 g-pa-10">
+                        <div class="landing-block-card-container g-bg-gray-light-v5 g-pl-30 g-pr-30 g-pt-30 g-pb-30">
+                            <h4 class="landing-block-node-title text-uppercase h5 g-color-gray-dark-v3 g-mb-10">Поддержать</h4>
+                            <div class="landing-block-node-subtitle g-font-style-normal"><span style="font-style: italic;">Вы можете поддержать бота в дальнейшем развитии</span></div>
+
+                            <hr class="g-brd-gray-light-v3 g-my-10">
+
+                            <div class="g-color-primary g-my-20">
+								<div class="landing-block-node-price g-font-size-30 g-line-height-1_2"><br></div>
+                                <div class="landing-block-node-price-text"> </div>
+                            </div>
+
+                            <hr class="g-brd-gray-light-v3 g-mt-10 mb-0">
+
+                            <ul class="landing-block-node-price-list list-unstyled g-mb-25"><li class="landing-block-node-price-list-item g-brd-bottom g-brd-gray-light-v3 g-py-12">Вы получите :</li>
+                                <li class="landing-block-node-price-list-item g-brd-bottom g-brd-gray-light-v3 g-py-12"><span style="font-weight: 700;">Роль на нашем сервере</span></li>
+                                <li class="landing-block-node-price-list-item g-brd-bottom g-brd-gray-light-v3 g-py-12"><span style="font-weight: 700;">Вы будете в канале "Донатеры"</span></li></ul>
+							<div class="landing-block-node-price-container">
+								<a class="landing-block-node-price-button btn g-btn-type-solid g-btn-size-md g-btn-px-m text-uppercase g-btn-primary rounded-0" href="https://www.donationalerts.com/r/ralaney" target="_popup">Поддержать сейчас</a>
+							</div>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </section></div><div id="b181" class="block-wrapper block-27-one-col-fix-title-and-text-2"><section class="landing-block js-animation fadeInUp g-pt-30 g-pb-5" style="animation-duration: 1000ms; animation-play-state: running; animation-name: none;">
+
+	<div class="landing-block-node-text-container landing-semantic-text-width container g-max-width-800">
+		<div class="text-center">
+			<h2 class="landing-block-node-title landing-semantic-title-medium h2">БЛАГОДАРНОСТИ</h2>
+			<div class="landing-block-node-text landing-semantic-text-medium g-pb-1"><span style="font-weight: bold;">Спасибо всем! Если вас не показали тут, не беда! Покажут в следущий раз&nbsp;ッ</span></div>
+		</div>
+	</div>
+
+</section></div><div id="b179" class="block-wrapper block-27-7-one-col-fix-text-on-bg"><section class="landing-block js-animation fadeInUp g-pt-50 g-pb-50" style="animation-duration: 1000ms; animation-play-state: running; animation-name: none;">
+
+		<div class="landing-block-node-text landing-semantic-text-medium text-center g-bg-primary-opacity-0_1 container g-max-width-800 g-pt-30 g-pb-30 g-pl-30 g-pr-30"><p><span style="text-decoration-line: underline;">Спасибо всем кто дал RALANEY идеи! Их очень много. Спасибо! кто принял бота в мониторинг!</span></p><p><span style="font-weight: bold; text-decoration-line: underline; color: rgb(79, 195, 247);">ПОМОЩНИКИ ПО БОТУ</span></p><p>Новогодний Ferum_YT🚀#3794 (кодер)</p><p>🔴𝙂𝙧𝙚𝙖𝙩 I 𝙈𝙖𝙠𝙖𝙩𝙤🔴#1000 (кодер)<br></p><p>ᕱdxmxgeᕱ#0182 ( по идеям )<br></p><p>CRiticals2 (котя)#5149 ( по идеям )<br></p><p><span style="font-weight: bold; text-decoration-line: underline; color: rgb(79, 195, 247);">СПАСИБО ЗА ОТЗЫВЫ</span></p><p><span style="font-weight: 700; text-decoration-line: underline; color: rgb(76, 175, 80);">Средняя оценка бота 9/10</span></p><p><span style="font-weight: 700; color: rgb(3, 169, 244);">Просмотрим не сколько отзывов<a href="https://discord.gg/D3SYfvqj2V" target="_blank">( посмотреть где эти отзывы )</a></span></p><span style="font-weight: bold;"><span style="color: rgb(255, 193, 7);">POKEMONYT<span st="" yle="font-size: 1rem; background-color: rgba(0, 0, 0, 0.05);">#7827</span></span><span st="" yle="color: var(--theme-color-main); font-size: 1rem; background-color: rgba(0, 0, 0, 0.05);">&nbsp;</span></span>┃<span style="font-weight: bold;"><span st="" yle="background-color: rgba(0, 0, 0, 0.05); color: var(--theme-color-main); font-size: 1rem;">Крутой бот!   inf/10</span></span><p><span style="font-weight: bold;"><span style="color: rgb(255, 193, 7);">ᕱdxmxgeᕱ#0182</span>&nbsp;</span><span st="" yle="background-color: rgba(0, 0, 0, 0.05); color: var(--theme-color-main); font-size: 1rem;">┃</span><span st="" yle="font-weight: bold; background-color: rgba(0, 0, 0, 0.05); color: var(--theme-color-main); font-size: 1rem;">Классный бот, хоть не до конца не испробывал он очень даже прикольный</span></p><p><span style="font-weight: bold;"><span style="color: rgb(255, 193, 7);">𝖉𝖚𝖈𝖐 𝖎𝖓 𝖘𝖓𝖊𝖆𝖐𝖊𝖗𝖘♪#3044&nbsp;</span></span><span st="" yle="background-color: rgba(0, 0, 0, 0.05); color: var(--theme-color-main); font-size: 1rem;">┃</span><span st="" yle="background-color: rgba(0, 0, 0, 0.05); color: var(--theme-color-main); font-size: 1rem; font-weight: bold;">Очень крутой бот, добавила  на сервер, не лагает. Всем советаю))))</span></p><p><span style="font-weight: bold;"><span style="color: rgb(255, 193, 7);">Daniel2#6140&nbsp;</span></span><span st="" yle="background-color: rgba(0, 0, 0, 0.05); color: var(--theme-color-main); font-size: 1rem;">┃</span><span st="" yle="background-color: rgba(0, 0, 0, 0.05); color: var(--theme-color-main); font-size: 1rem; font-weight: bold;">Отличный бот, не лагает, всем советую!</span></p><p><span style="font-weight: bold;"><span style="color: rgb(255, 193, 7);">DvinChik#5236&nbsp;</span></span><span st="" yle="background-color: rgba(0, 0, 0, 0.05); color: var(--theme-color-main); font-size: 1rem;">┃</span><span st="" yle="background-color: rgba(0, 0, 0, 0.05); color: var(--theme-color-main); font-size: 1rem; font-weight: bold;">Бот хороший, ничего сложного, все просто, понятно и удобно</span></p><p><span st="" yle="background-color: rgba(0, 0, 0, 0.05); font-size: 1rem; font-weight: bold; color: rgb(63, 81, 181);">Это еще часть</span></p></div>
+
+</section></div><div id="b183" class="block-wrapper block-17-copyright"><section class="landing-block js-animation animation-none animated" style="animation-duration: 1000ms; animation-play-state: running;">
+	<div class="landing-semantic-text-medium text-center g-color-gray-dark-v3 g-pa-10">
+		<div class="g-width-600 mx-auto">
+			<div class="landing-block-node-text landing-semantic-text-medium js-animation animation-none g-font-size-12 animated" style="animation-duration: 1000ms; animation-play-state: running;"><p>© 2020-2021 Все права защищены!</p></div>
+<script src="https://ralaney.ralaney.repl.co/informer-0.9.0.js" type="text/javascript"></script>
+
+<canvas id="traffic-widget-ex1" height="70" width="200"></canvas>
+
+		</div>
+	</div>
+</section></div>
+	<div class="bx-landing-cookies-popup" id="bx-landing-cookies-popup">
+		<div class="bx-landing-cookies-popup-title">Cookie-файлы</div>
+		<div class="bx-landing-cookies-popup-content">
+			<div class="bx-landing-cookies-main-agreement"></div>
+			<div class="bx-landing-cookies-popup-subtitle">Настройка cookie-файлов</div>
+			<div class="bx-landing-cookies-popup-subtitle-detail">Детальная информация о целях обработки данных и поставщиках, которые мы используем на наших сайтах</div>
+
+			<div>
+				<div class="bx-landing-cookies-main-agreement-block">
+					<span class="bx-landing-cookies-main-agreement-block-name">Аналитические Cookie-файлы</span>
+					<span class="bx-landing-cookies-switcher" data-type="analytic">Отключить все</span>
+				</div>
+				<div class="bx-landing-cookies-analytic-agreements"></div>
+			</div>
+
+			<div>
+				<div class="bx-landing-cookies-main-agreement-block">
+					<span class="bx-landing-cookies-main-agreement-block-name">Технические Cookie-файлы</span>
+				</div>
+				<div class="bx-landing-cookies-technical-agreements" data-type="technical"></div>
+			</div>
+
+			<div>
+				<div class="bx-landing-cookies-main-agreement-block">
+					<span class="bx-landing-cookies-main-agreement-block-name">Другие Cookie-файлы</span>
+				</div>
+				<div class="bx-landing-cookies-other-agreements" data-type="other"></div>
+			</div>
+
+		</div>
+		<div class="bx-landing-cookies-popup-footer">
+			<button class="ui-btn ui-btn-lg ui-btn-primary ui-btn-round bx-landing-cookies-button-save">
+				Принять все			</button>
+			<button class="ui-btn ui-btn-lg ui-btn-light-border ui-btn-round bx-landing-cookies-button-cancel">
+				Отказаться от всех			</button>
+		</div>
+		<span class="bx-landing-cookies-button-close"></span>
+	</div>
+	<div class="bx-landing-cookies-popup-warning" id="bx-landing-cookies-popup-warning" style="display: block;">
+		<div class="bx-landing-cookies-popup-warning-inner">
+			<div class="bx-landing-cookies-popup-warning-left">
+				<span class="bx-landing-cookies-popup-warning-text">Мы используем файлы Cookie для улучшения работы, персонализации и повышения удобства пользования нашим сайтом. Продолжая посещать сайт, вы соглашаетесь на использование нами файлов Cookie.</span>
+				<span class="bx-landing-cookies-popup-warning-link" id="bx-landing-cookies-opt-link">Подробнее о нашей политике в отношении Cookie.</span>
+			</div>
+			<div class="bx-landing-cookies-popup-warning-right">
+				<span class="ui-btn ui-btn-lg ui-btn-light-border ui-btn-round" id="bx-landing-cookies-opt">
+					Настроить				</span>
+				<span class="ui-btn ui-btn-lg ui-btn-primary ui-btn-round" id="bx-landing-cookies-accept">
+					Принять все				</span>
+			</div>
+		</div>
+	</div>
+	<div class="bx-landing-cookies-popup-notice" id="bx-landing-cookies-popup-notice" style="left: 75px; bottom: 23px;				 background:#03c1fe;
+				 color:#fff;">
+		<div class="bx-landing-cookies-popup-notice-svg-wrap">
+			<svg style="fill:#fff;" xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#FFF" class="bx-landing-cookies-popup-notice-svg">
+				<path fill-rule="evenodd" d="M7.328.07c.463 0 .917.043 1.356.125.21.04.3.289.228.49a1.5 1.5 0 001.27 1.99h.001a.22.22 0 01.213.243 3.218 3.218 0 003.837 3.453c.18-.035.365.078.384.26A7.328 7.328 0 117.329.07zm.263 10.054a1.427 1.427 0 100 2.854 1.427 1.427 0 000-2.854zM3.697 7.792a.884.884 0 100 1.769.884.884 0 000-1.769zm5.476-.488a.884.884 0 100 1.768.884.884 0 000-1.768zM5.806 3.628a1.427 1.427 0 100 2.854 1.427 1.427 0 000-2.854z"></path>
+			</svg>
+		</div>
+		<span class="bx-landing-cookies-popup-notice-text-wrap">
+			<span class="bx-landing-cookies-popup-notice-text">Cookies</span>
+		</span>
+
+	</div>
+
+
+</main>
+<script type="text/javascript">if(!window.BX)window.BX={};if(!window.BX.message)window.BX.message=function(mess){if(typeof mess==='object'){for(let i in mess) {BX.message[i]=mess[i];} return true;}};</script>
+<script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_WINDOW_CONTINUE':'Продолжить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script><script type="text/javascript" src="Ralaney_files/core.min.js.�%2591ез&#32;названи�%258F"></script><script>BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/core/css/core.css','/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);</script>
+<script type="text/javascript">(window.BX||top.BX).message({'MAIN_SIDEPANEL_CLOSE':'Закрыть','MAIN_SIDEPANEL_PRINT':'Печать'});</script>
+<script type="text/javascript">(window.BX||top.BX).message({'UI_BUTTONS_SAVE_BTN_TEXT':'Сохранить','UI_BUTTONS_CREATE_BTN_TEXT':'Создать','UI_BUTTONS_ADD_BTN_TEXT':'Добавить','UI_BUTTONS_SEND_BTN_TEXT':'Отправить','UI_BUTTONS_CANCEL_BTN_TEXT':'Отменить','UI_BUTTONS_CLOSE_BTN_TEXT':'Закрыть','UI_BUTTONS_APPLY_BTN_TEXT':'Применить'});</script>
+<script type="text/javascript">(window.BX||top.BX).message({'UI_SWITCHER_ON':'вкл','UI_SWITCHER_OFF':'выкл'});</script>
+<script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'BITRIX_SM','SERVER_TZ_OFFSET':'10800','SITE_ID':'s1','SITE_DIR':'/','USER_ID':'','SERVER_TIME':'1612888420','USER_TZ_OFFSET':'10800','USER_TZ_AUTO':'Y','bitrix_sessid':'d7043a4dfee050061cd74aff21dc26fb'});</script><script type="text/javascript" src="Ralaney_files/main.polyfill.customevent.min.js.�%2591ез&#32;названи�%258F"></script>
+<script type="text/javascript" src="Ralaney_files/dexie.bitrix.bundle.min.js.�%2591ез&#32;названи�%258F"></script>
+<script type="text/javascript" src="Ralaney_files/core_ls.min.js.�%2591ез&#32;названи�%258F"></script>
+<script type="text/javascript" src="Ralaney_files/core_fx.min.js.�%2591ез&#32;названи�%258F"></script>
+<script type="text/javascript" src="Ralaney_files/core_frame_cache.min.js.�%2591ез&#32;названи�%258F"></script>
+<script type="text/javascript" src="Ralaney_files/metrika.bundle.min.js.�%2591ез&#32;названи�%258F"></script>
+<script type="text/javascript" src="Ralaney_files/pageobject.min.js.�%2591ез&#32;названи�%258F"></script>
+<script type="text/javascript" src="Ralaney_files/manager.min.js.�%2591ез&#32;названи�%258F"></script>
+<script type="text/javascript" src="Ralaney_files/slider.min.js.�%2591ез&#32;названи�%258F"></script>
+<script type="text/javascript" src="Ralaney_files/main.popup.bundle.min.js.�%2591ез&#32;названи�%258F"></script>
+<script type="text/javascript" src="Ralaney_files/ui.buttons.bundle.min.js.�%2591ез&#32;названи�%258F"></script>
+<script type="text/javascript" src="Ralaney_files/ui.switcher.min.js.�%2591ез&#32;названи�%258F"></script>
+<script type="text/javascript">var bxDate = new Date(); document.cookie="BITRIX_SM_TIME_ZONE="+bxDate.getTimezoneOffset()+"; path=/; expires=Tue, 01 Feb 2022 00:00:00 +0300"</script>
+<script>
+	(function(w,d,u){
+		var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
+		var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+	})(window,document,'https://cdn-ru.bitrix24.ru/b16626110/landing/assets/assets_webpack_c5c5ecb75b_1612887375.js');
+</script>
+
+
+
+<script type="text/javascript" src="Ralaney_files/lazyload.min.js.�%2591ез&#32;названи�%258F"></script>
+<script type="text/javascript" src="Ralaney_files/script.min.js.�%2591ез&#32;названи�%258F"></script>
+<script type="text/javascript" src="Ralaney_files/script.min.js(1).�%2591ез&#32;названи�%258F"></script>
+<script>
+	// don't use BX.ready here
+	window.addEventListener('load', function()
+	{
+		new BX.Landing.Cookies({
+			enable: true,
+			siteId: 21,
+			onlyInformation: false,
+			availableCodes: ["ga","gtm","ym","fbp","vkp","yt","gmap"],
+			idButtonOpt: 'bx-landing-cookies-opt',
+			idButtonOptLink: 'bx-landing-cookies-opt-link',
+			idButtonAccept: 'bx-landing-cookies-accept',
+			idAgreementPopup: 'bx-landing-cookies-popup',
+			idAgreementSmallPopup: 'bx-landing-cookies-popup-warning',
+			idCookiesNotice: 'bx-landing-cookies-popup-notice',
+			classNameMainAgreement: 'bx-landing-cookies-main-agreement',
+			classNameAnalyticAgreements: 'bx-landing-cookies-analytic-agreements',
+			classNameTechnicalAgreements: 'bx-landing-cookies-technical-agreements',
+			classNameOtherAgreements: 'bx-landing-cookies-other-agreements',
+			classNameButtonSave: 'bx-landing-cookies-button-save',
+			classNameButtonCancel: 'bx-landing-cookies-button-cancel',
+			classNameButtonClose: 'bx-landing-cookies-button-close',
+			classNameCookiesSwitcher: 'bx-landing-cookies-switcher',
+			agreementAjaxPath: '/bitrix/services/main/ajax.php',
+			messages: {
+				acceptAll: 'Принять все',
+				acceptModified: 'Сохранить и принять',
+				declineAll: 'Отказаться от всех',
+				declineModified: 'Отменить',
+				switcherOn: 'Включить все',
+				switcherOff: 'Отключить все'
+			}
+		});
+	});
+</script>
+
+<script>
+	(function()
+	{
+		new BX.Landing.Metrika();
+	})();
+</script>
+
+<script>
+	(function(w,d,u){
+		var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
+		var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+	})(window,document,'https://cdn-ru.bitrix24.ru/b16626110/crm/tag/call.tracker.js');
+</script>
+
+<a data-show-effect="zoomIn" class="js-go-to u-go-to-v1 g-bg-white-opacity-0_7 g-bg-primary--hover g-brd-main g-brd-white--hover opacity-0"></a></body></html>
